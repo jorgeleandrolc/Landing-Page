@@ -34,8 +34,7 @@ $(function () {
 		$(".sticky-wrapper-header").sticky({ topSpacing: 0 });
 	});
 
-	/* Mouseover
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	$(document).ready(function () {
 		$(".main-menu ul li.megamenu").mouseover(function () {
@@ -56,16 +55,10 @@ $(function () {
 	});
 
 
-	
-	/* NiceSelect
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-
 	$(document).ready(function () {
 		$('select').niceSelect();
 	});
 
-	/* OwlCarousel - Blog Post slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('.carousel-slider-post');
@@ -79,8 +72,6 @@ $(function () {
 		});
 	});
 
-	/* OwlCarousel - Banner Rotator Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('.banner-rotator-slider');
@@ -96,9 +87,6 @@ $(function () {
 			autoplayHoverPause: true
 		});
 	});
-
-	/* OwlCarousel - Product Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(document).ready(function () {
 		var owl = $('#product-in-slider');
@@ -132,8 +120,6 @@ $(function () {
 		});
 	});
 
-	/* Scroll to Top
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(window).on('scroll', function () {
 		scroll = $(window).scrollTop();
@@ -149,8 +135,6 @@ $(function () {
 		}, 1000);
 	});
 
-	/* Contact-form
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	$.validator.setDefaults({
 		submitHandler: function () {
 			alert("submitted!");
@@ -182,7 +166,6 @@ $(function () {
 			},
 			errorElement: "div",
 			errorPlacement: function (error, element) {
-				// Add the `help-block` class to the error element
 				error.addClass("help-block");
 
 				if (element.prop("type") === "checkbox") {
@@ -200,8 +183,7 @@ $(function () {
 		});
 	});
 
-	/* heroslider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	var swiper = new Swiper('.heroslider', {
 		spaceBetween: 30,
@@ -221,8 +203,7 @@ $(function () {
 	});
 
 
-	/* Product Filters
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	var swiper = new Swiper('.swiper-product-filters', {
 		slidesPerView: 3,
@@ -256,8 +237,7 @@ $(function () {
 		}
 	});
 
-	/* Countdown
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	$('[data-countdown]').each(function () {
 		var $this = $(this),
@@ -272,8 +252,7 @@ $(function () {
 		});
 	});
 
-	/* Deal Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	$('.deal-slider').slick({
 		dots: false,
@@ -307,8 +286,7 @@ $(function () {
 		}]
 	});
 
-	/* News Slider
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
 
 	$('#news-slider').slick({
 		dots: false,
@@ -341,8 +319,6 @@ $(function () {
 		}]
 	});
 
-	/* Fancybox
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 
 	$(".fancybox").fancybox({
 		maxWidth: 1200,
@@ -351,8 +327,7 @@ $(function () {
 		height: '70%',
 	});
 
-	/* Toggle sidebar
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+
 
 	$(document).ready(function () {
 		$('#sidebarCollapse').on('click', function () {
@@ -361,9 +336,8 @@ $(function () {
 		});
 	});
 
-	/* Product slider 
-	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
-	// optional
+
+  
 	$('#blogCarousel').carousel({
 		interval: 5000
 	});
